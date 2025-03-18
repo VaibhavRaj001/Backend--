@@ -106,8 +106,8 @@ async def visualize_sentiment(request: ReviewRequest):
 
     return {
         "message": "Visualizations generated",
-        "heatmap_url": "https://frontend-1-mu-five.vercel.app/heatmap",
-        "piechart_url": "https://frontend-1-mu-five.vercel.app/piechart",
+        "heatmap_url": "https://frontend-1-8a7k2jyxp-vaibhavraj001s-projects.vercel.app/heatmap",
+        "piechart_url": "https://frontend-1-8a7k2jyxp-vaibhavraj001s-projects.vercel.app/piechart",
         "results": results,
     }
 

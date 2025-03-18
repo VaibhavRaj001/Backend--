@@ -16,7 +16,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://frontend-1-git-main-vaibhavraj001s-projects.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -106,8 +106,8 @@ async def visualize_sentiment(request: ReviewRequest):
 
     return {
         "message": "Visualizations generated",
-        "heatmap_url": "https://frontend-1-git-main-vaibhavraj001s-projects.vercel.app/heatmap",
-        "piechart_url": "https://frontend-1-git-main-vaibhavraj001s-projects.vercel.app/piechart",
+        "heatmap_url": "https://backend-4-8fik.onrender.com/heatmap",
+        "piechart_url": "https://backend-4-8fik.onrender.com/piechart",
         "results": results,
     }
 

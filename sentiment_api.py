@@ -16,7 +16,8 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  
+    allow_origins=["*"],
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -105,8 +106,8 @@ async def visualize_sentiment(request: ReviewRequest):
 
     return {
         "message": "Visualizations generated",
-        "heatmap_url": "http://localhost:8000/heatmap",
-        "piechart_url": "http://localhost:8000/piechart",
+        "heatmap_url": "https://flourishing-toffee-b79cf1.netlify.app/heatmap",
+        "piechart_url": "https://flourishing-toffee-b79cf1.netlify.app/piechart",
         "results": results,
     }
 

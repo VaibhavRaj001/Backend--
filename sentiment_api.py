@@ -106,8 +106,8 @@ async def visualize_sentiment(request: ReviewRequest):
 
     return {
         "message": "Visualizations generated",
-        "heatmap_url": "https://flourishing-toffee-b79cf1.netlify.app/heatmap",
-        "piechart_url": "https://flourishing-toffee-b79cf1.netlify.app/piechart",
+        "heatmap_url": "https://frontend-1-mu-five.vercel.app/heatmap",
+        "piechart_url": "https://frontend-1-mu-five.vercel.app/piechart",
         "results": results,
     }
 

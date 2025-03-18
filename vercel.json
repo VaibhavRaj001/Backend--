@@ -2,8 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/main.py",
+      "src": "sentiment_api.py",  // FastAPI app
       "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",         // Route requests to the backend
+      "dest": "sentiment_api.py"
     }
   ]
 }
